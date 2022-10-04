@@ -19,3 +19,11 @@
 - n+""을 진행하면 자바스크립트에서는 n이 문자형이된다.
 - split으로 문자열을 쪼갤 수 있다.
 - reduce를 사용하여 각 자리 수를 더해준다. 이때 initial value를 0으로 초기화해준 이유는 acc를 정수화 해주기 위함 0을 적지 않고 "parseInt(acc) + parseInt(curr)"도 가능하다.
+
+5. 정수 제곱근 구하기
+
+- `Number.isInteger(value)`을 사용하면 value가 정수면 true값을 return하고 정수가 아니면 false값을 return 한다.
+- `Math.sqrt(value)`를 사용하면 value의 제곱근이 return 된다.
+- `Math.pow(a,b)`를 사용하면 a에 b제곱한 값이 return 된다.
+- `Math.sqrt(value)%1 === 0`를 이용해 정수인지 아닌지 판별 할 수 있다.
+- `value**2`를 사용하면 value를 제곱한다. (\*\*b: b만큼 제곱)
