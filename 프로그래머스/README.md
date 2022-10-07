@@ -34,3 +34,22 @@
 - `reverse()`를 사용하면 배열을 뒤집을 수 있다.
 - `map(i => funtion(i))` map을 사용하여 배열을 순회하는 함수를 만들 수 있다.
 - `paresInt(string), Number(string)`을 사용하면 문자열을 숫자로 바꿀 수 있다.
+
+7. 문자열 내 P와 y의 갯수 구하기
+
+- `toUpperCase`/ `toLowerCase`를 사용하여 문자열을 대/소문자로 만들 수 있다.
+- `arr.reduce(callback[, initialValue])` 사용:
+- callback:
+  배열에 각요소에 실행 할 함수 이다.
+
+  1. accumulator:
+     누산기는 콜백의 반환값을 누적합니다. 콜백의 이전 반환값 또는, 콜백의 첫 번째 호출이면서 initialValue를 제공한 경우에는 initialValue의 값이다.
+
+  2. currentValue
+     처리할 현재 요소.
+
+  3. currentIndex Optional
+     처리할 현재 요소의 인덱스. initialValue를 제공한 경우 0, 아니면 1부터 시작한다.
+
+  4. initialValue Optional
+     callback의 최초 호출에서 첫 번째 인수에 제공하는 값. 초기값을 제공하지 않으면 배열의 첫 번째 요소를 사용합니다. 빈 배열에서 초기값 없이 reduce()를 호출하면 오류가 발생한다.
